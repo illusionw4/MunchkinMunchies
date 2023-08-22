@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/banner"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/dishname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/caslonbold"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:text="Dish Name"
+            />
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:isIndicator="true"
+            android:layoutDirection="ltr"
+            android:numStars="5"
+            android:progressTint="@color/green"
+            android:rating="3.5"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="10min | Serves 2"
+            android:fontFamily="@font/gilroyeb"
+            android:layout_marginTop="4dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/sansb"
+            android:layout_marginTop="10dp"
+            android:text="Ingredients"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listviewww"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/allinfocard" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Steps"
+            android:fontFamily="@font/sfbold"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_100"
+            android:padding="6dp"
+            android:text="Ingredients for making a dhokla"
+            android:fontFamily="@font/poppinsre"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

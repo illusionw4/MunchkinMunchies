@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, Harshit Asthana"
+        android:fontFamily="@font/poppinsb"
+        android:textColor="@color/darkviolet"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Cook"
+        android:fontFamily="@font/poppinsb"
+        android:textColor="@color/darkviolet"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="16dp"
+        android:padding="6dp"
+        android:fillViewport="true"
+        android:layout_marginEnd="4dp"
+        android:scrollbars="none"
+        android:layout_gravity="center">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/cake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="6dp"
+        >
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="59dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cakes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cake"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#cdd2d6"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsb"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nogluten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="6dp"
+        android:padding="4dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="59dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/gluten" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Gluten"
+            android:gravity="center"
+            android:textColor="#cdd2d6"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsb"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deserts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="6dp"
+        android:padding="4dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="59dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/deserts" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deserts"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#cdd2d6"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsb"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/smoothie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="59dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/smoothies" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smoothies"
+            android:textColor="#cdd2d6"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsb"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="6dp"
+        android:padding="4dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="58dp"
+            android:layout_height="59dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/pizza" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza"
+            android:textColor="#cdd2d6"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsb"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/burger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="4dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="59dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/burgur" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burger"
+            android:textColor="#cdd2d6"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsb"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/salads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:padding="4dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="59dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/salads" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="salads"
+            android:textColor="#cdd2d6"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsb"
+            />
+    </LinearLayout>
+</LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp" />
+
+
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            app:ci_width="8dp"
+            app:ci_height="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:ci_margin="8dp"
+            app:ci_drawable="@drawable/indicator_selector" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sliderecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/itemrecyclerview"
+        android:orientation="horizontal"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/progressbar" />
+
+        <TextView
+            android:id="@+id/progtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cooking...."
+            android:fontFamily="@font/sansb"
+            android:textColor="#dddddd"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

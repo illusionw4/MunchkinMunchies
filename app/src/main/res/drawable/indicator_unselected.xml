@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/white" /> <!-- Customize the color for the unselected state -->
+        <size android:width="8dp" android:height="8dp" /> <!-- Customize the size as needed -->
+        <corners android:radius="4dp" /> <!-- Customize the corner radius as needed -->
+    </shape>

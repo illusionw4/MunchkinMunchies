@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_margin="14dp"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/shr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/baseline_share_24" />
+
+        <ImageView
+            android:id="@+id/fav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/baseline_favorite_border_24"
+            />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgshow"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/deserts"
+                app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textViewDishName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toStartOf="@+id/rating"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsb"
+                android:maxLines="2"
+                android:text="Dish Name"
+                android:textSize="15sp" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:rating="4.5"
+                android:stepSize="0.5"
+                android:isIndicator="true"
+                android:progressTint="@color/green"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                style="@style/Widget.AppCompat.RatingBar.Small" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/sansb"
+                android:paddingStart="4dp"
+                android:text="Cuisine: "
+                android:textColor="@color/grey"
+                android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/foodcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Featuring Chef: Indian"
+            android:paddingStart="4dp"
+            android:textColor="@color/grey"
+            android:textSize="13sp"
+            android:fontFamily="@font/gilroybold"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories: "
+            android:paddingStart="4dp"
+            android:textSize="13sp"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/sansb"
+            />
+
+        <TextView
+            android:id="@+id/calorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Featuring Chef: Indian"
+            android:paddingStart="4dp"
+            android:textSize="13sp"
+            android:textColor="@color/grey"
+            android:fontFamily="@font/gilroybold"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
